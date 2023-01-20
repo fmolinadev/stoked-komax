@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="E-commerce - Challenge técnico para Komax.cl"
+    />
+    <meta name="keywords" content="e-commerce, challenge, komax" />
+    <meta name="author" content="Francisco D. Molina" />
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="21600" />
+    <link rel="icon" href="/public/stoked-favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +37,7 @@
             rel="noreferrer"
           >
             <img
-              src="/assets/instagram-brand.png"
+              src="/assets/instagram-brand.svg"
               alt="instagram"
               class="instagram_icon"
             />
@@ -34,16 +45,16 @@
         </div>
         <div class="icons_container">
           <a href="">
-            <img src="/assets/profile-icon.png" alt="profile icon" />
+            <img src="/assets/profile-icon.svg" alt="profile icon" />
           </a>
           <a href="">
-            <img src="/assets/transport-icon.png" alt="transport icon" />
+            <img src="/assets/transport-icon.svg" alt="transport icon" />
           </a>
           <a href="">
-            <img src="/assets/kart-icon.png" alt="kart icon" />
+            <img src="/assets/cart-icon.svg" alt="kart icon" />
           </a>
           <a href="">
-            <img src="/assets/store-icon.png" alt="store icon" />
+            <img src="/assets/store-icon.svg" alt="store icon" />
           </a>
         </div>
       </div>
@@ -64,10 +75,12 @@
           <li><a href="">Equipamiento</a></li>
           <li><a href="">Sale</a></li>
         </ul>
-        <div id="searchBar" class="searchbar_container">
-          <button>Ir</button>
-          <input type="text" placeholder="buscar" id="getinput" />
-        </div>
+        <form action="search" class="searchbar_container">
+          <button type="submit" id="search_action">
+            <img src="/assets/search_icon.svg" alt="search icon" />
+          </button>
+          <input type="search" placeholder="buscar" id="getinput" />
+        </form>
       </div>
     </nav>
   </body>

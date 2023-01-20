@@ -33,12 +33,18 @@ li {
   font-family: var(--font);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /****** Header Style *********/
 
 @media (min-width: 320px) {
   header {
     font-size: 118.8%;
     width: 100%;
+    flex-direction: column;
+    padding: 5px 0 5px 0;
   }
 
   .header_container {

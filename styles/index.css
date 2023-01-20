@@ -255,6 +255,11 @@ li {
       opacity: 1;
     }
   }
+
+  .dot_container {
+    text-align: center;
+  }
+
   .dot {
     cursor: pointer;
     height: 8px;

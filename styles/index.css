@@ -433,3 +433,20 @@ li {
     width: 100%;
   }
 }
+
+/****** Categories Styles ********/
+
+@media (min-width: 320px) {
+  .categories_text_head {
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 700px) {
+}
+
+@media (min-width: 1200px) {
+}

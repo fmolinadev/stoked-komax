@@ -22,6 +22,13 @@ $(document).ready(function () {
         autoplay: false,
         center: false,
       },
+      1300: {
+        items: 3,
+        loop: false,
+        nav: true,
+        autoplay: false,
+        center: false,
+      },
     },
   });
 });

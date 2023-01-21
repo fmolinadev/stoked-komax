@@ -20,7 +20,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+span {
   font-family: var(--font);
 }
 
@@ -309,5 +310,111 @@ li {
 @media (min-width: 320px) {
   #banner-carrousel {
     padding-top: 20px;
+  }
+}
+
+/****** Product Carousel Styles ********/
+
+@media (min-width: 320px) {
+  .products_container {
+    width: 100%;
+  }
+  .products_text_head {
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    height: 380px;
+  }
+
+  .slider {
+    margin: 0 40px;
+    height: 80%;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    padding-top: 40px;
+  }
+
+  .slider .image-items {
+    height: 80%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .slider .image-items .image {
+    height: 90%;
+  }
+
+  .slider .image-items .image img {
+    height: 100%;
+    display: block;
+    width: 60%;
+    overflow: visible;
+    object-fit: cover;
+    margin: auto;
+  }
+
+  .text_container {
+    text-align: center;
+    align-items: center;
+  }
+
+  .text_container div {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .text_container p {
+    text-decoration: line-through;
+    font-size: 14px;
+    text-align: center;
+    padding-right: 8px;
+  }
+
+  .text_container span {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .arrowButton {
+    position: absolute !important;
+    top: 50% !important;
+    color: black !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    background-color: white !important;
+    padding: 10px !important;
+  }
+
+  .arrowButton.left {
+    left: 0 !important;
+  }
+
+  .arrowButton.right {
+    right: 0 !important;
+  }
+
+  .arrowButton::after {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 700px) {
+  .products_container {
+    margin: 0px 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products_container {
+    width: 100%;
   }
 }

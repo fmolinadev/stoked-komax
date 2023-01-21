@@ -24,10 +24,18 @@
     <link href="/styles/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/owl.carousel.css" />
     <link rel="stylesheet" href="./styles/owl.theme.green.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/owl.carousel.js"></script>
     <title>Stoked Store</title>
   </head>
+
   <body>
     <header class="header">
       <div class="header_container">
@@ -93,15 +101,15 @@
           <p>Envío gratis por compras sobre $50.000</p>
         </header>
         <section class="hero_slider_container">
-          <div class="image_slider fade">
+          <picture class="image_slider fade">
             <img src="/images/01-stoked_trajes.jpg" style="width: 100%" />
-          </div>
-          <div class="image_slider fade">
+          </picture>
+          <picture class="image_slider fade">
             <img src="/images/02-stoked_waves.jpg" style="width: 100%" />
-          </div>
-          <div class="image_slider fade">
+          </picture>
+          <picture class="image_slider fade">
             <img src="/images/03-stoked_summer.jpg" style="width: 100%" />
-          </div>
+          </picture>
         </section>
         <br />
         <div class="dot_container">
@@ -111,43 +119,115 @@
         </div>
       </section>
       <section class="owl-carousel owl-theme" id="banner-carrousel">
-        <div class="item">
+        <picture class="item">
           <img src="/images/carrusel-banner-1.png" alt="image banner" />
-        </div>
-        <div class="item">
+        </picture>
+        <picture class="item">
           <img src="/images/carrusel-banner-2.png" alt="image banner" />
-        </div>
-        <div class="item">
+        </picture>
+        <picture class="item">
           <img src="/images/carrusel-banner-3.png" alt="image banner" />
-        </div>
+        </picture>
       </section>
+      <div class="products_container">
+        <h3 class="products_text_head">Lo que la está llevando:</h3>
+
+        <section class="container">
+          <div class="slider mySwiper">
+            <div class="image-items swiper-wrapper">
+              <article class="image swiper-slide">
+                <img src="./images/products/chaqueta_mujer.jpg" alt="" />
+                <div class="text_container">
+                  <h4>Chaqueta cortaviento Coast mujer reciclada</h4>
+                  <div>
+                    <span>$49.990</span>
+                  </div>
+                </div>
+              </article>
+              <article class="image swiper-slide">
+                <img src="./images/products/gorro.jpg" alt="" />
+                <div class="text_container">
+                  <h4>Gorro Flora</h4>
+                  <div>
+                    <span>$14.990</span>
+                  </div>
+                </div>
+              </article>
+              <article class="image swiper-slide">
+                <img src="./images/products/mochila.jpg" alt="" />
+                <div class="text_container">
+                  <h4>Mochila Seca Surf Expedition 30 Lts</h4>
+                  <div>
+                    <span>$39.990</span>
+                  </div>
+                </div>
+              </article>
+              <article class="image swiper-slide">
+                <img src="./images/products/polera__lava.jpg" alt="" />
+                <div class="text_container">
+                  <h4>Polera Reciclada Lava Mc</h4>
+                  <div>
+                    <span>$17.990</span>
+                  </div>
+                </div>
+              </article>
+              <article class="image swiper-slide">
+                <img src="./images/products/poleron_octopus.jpg" alt="" />
+                <div class="text_container">
+                  <h4>Poleron Octopus Hombre Reciclado</h4>
+                  <div>
+                    <p>$49.990</p>
+                    <span>$29.994</span>
+                  </div>
+                </div>
+              </article>
+              <article class="image swiper-slide">
+                <img src="./images/products/sandali_art.jpg" alt="" />
+                <div class="text_container">
+                  <h4>Sandaliart Feather</h4>
+                  <div>
+                    <span>$9.990</span>
+                  </div>
+                </div>
+              </article>
+              <article class="image swiper-slide">
+                <img src="./images/products/short mujer.jpg" alt="" />
+                <div class="text_container">
+                  <h4>Short Kai Mujer</h4>
+                  <div>
+                    <span>$29.990</span>
+                  </div>
+                </div>
+              </article>
+              <article class="image swiper-slide">
+                <img src="./images/products/toalla.jpg" alt="" />
+                <div class="text_container">
+                  <h4>Toalla Logo</h4>
+                  <div>
+                    <p>$24.990</p>
+                    <span>$12.495</span>
+                  </div>
+                </div>
+              </article>
+              <article class="image swiper-slide">
+                <img src="./images/products/vestido_mujer.jpg" alt="" />
+                <div class="text_container">
+                  <h4>Vestido Mushy Mujer</h4>
+                  <div>
+                    <p>$34.990</p>
+                    <span>$17.495</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-button-next arrowButton right"></div>
+            <div class="swiper-button-prev arrowButton left"></div>
+          </div>
+        </section>
+      </div>
     </main>
-    <script src="js/fullwithBanners.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
-          margin: 10,
-          nav: true,
-          dots: false,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 2,
-            },
-            1200: {
-              items: 3,
-              loop: false,
-              nav: false,
-            },
-          },
-        });
-      });
-    </script>
+    <script src=" js/controllerFullwithBanners.js"></script>
+    <script src="js/carouselBanners.js"></script>
+    <script src="js/carrouselProducts.js"></script>
   </body>
 </html>

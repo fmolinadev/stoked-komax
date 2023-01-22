@@ -330,16 +330,23 @@
             sorteos y concursos que tenemos para ti!
           </p>
           <form action="#">
-            <input type="text" placeholder="Ingresá tu correo electrónico" />
+            <input
+              type="email"
+              name="email"
+              title="Se necesita un email"
+              placeholder="Ingresá tu correo electrónico"
+              required
+            />
+
+            <div class="footer_terms">
+              <input type="checkbox" name="terms" id="terms" required />
+              <p>
+                Acepto recibir promociones y novedades de Stoked y marcas
+                representadas por Komax.
+              </p>
+            </div>
+            <button type="submit">Registrarme</button>
           </form>
-          <div class="footer_terms">
-            <input type="checkbox" name="terms" id="terms" />
-            <p>
-              Acepto recibir promociones y novedades de Stoked y marcas
-              representadas por Komax.
-            </p>
-          </div>
-          <button type="submit">Registrarme</button>
         </div>
         <div class="footer_info">
           <h4>Te informamos</h4>

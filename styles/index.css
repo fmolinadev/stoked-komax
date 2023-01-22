@@ -67,6 +67,14 @@ footer {
     width: 110%;
   }
 
+  #transport {
+    display: none;
+  }
+
+  #store {
+    display: none;
+  }
+
   .icons_container {
     display: inline-block;
     position: absolute;
@@ -82,7 +90,7 @@ footer {
     display: none;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   header {
     font-size: 131.3%;
   }
@@ -100,6 +108,18 @@ footer {
   .socialmedia_text {
     font-size: 12px;
     font-weight: 300;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  #transport {
+    display: inline-flex;
+  }
+
+  #store {
+    display: inline-flex;
   }
 
   .divider {

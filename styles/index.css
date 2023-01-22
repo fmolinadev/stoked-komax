@@ -521,17 +521,18 @@ footer {
     padding-top: 10px;
   }
 
-  .grid-item {
+  .grid_item {
     display: flex;
     flex-direction: column;
   }
 
-  .grid-item img {
+  .grid_item img {
     width: 100%;
   }
 
-  .grid-item span {
+  .grid_item span {
     text-decoration-line: underline;
+    padding-left: 6px;
   }
 }
 
@@ -555,35 +556,35 @@ footer {
 /****** Footer Styles ********/
 
 @media (min-width: 320px) {
-  .footer-container {
+  .footer_container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr repeat(2, 1fr) 0.5fr;
     background-color: var(--light-grey);
     padding: 0;
   }
-  .footer-subscription-area {
+  .footer_subscription_area {
     background-color: var(--grey-footer);
     padding: 15px;
   }
-  .footer-subscription-area h3 {
+  .footer_subscription_area h3 {
     font-size: 17px;
     font-weight: 400;
     color: black;
   }
-  .footer-subscription-area p {
+  .footer_subscription_area p {
     padding-top: 8px;
     padding-bottom: 12px;
     color: black;
     font-size: 16px;
     font-weight: 300;
   }
-  .footer-subscription-area form {
+  .footer_subscription_area form {
     width: 100%;
     height: 30px;
     border: none;
   }
-  .footer-subscription-area input {
+  .footer_subscription_area input {
     width: 100%;
     font-size: 12px;
     font-weight: 200;
@@ -593,28 +594,28 @@ footer {
     padding: 8px;
   }
 
-  .footer-subscription-area input::placeholder {
+  .footer_subscription_area input::placeholder {
     color: grey;
     font-family: var(--font);
     font-size: 16px;
   }
 
-  .footer-terms {
+  .footer_terms {
     display: flex;
     align-items: center;
     flex-direction: row;
     padding-top: 4px;
   }
-  .footer-terms input {
+  .footer_terms input {
     width: 25px;
     cursor: pointer;
   }
-  .footer-terms p {
+  .footer_terms p {
     width: 100%;
     font-size: 14px;
   }
 
-  .footer-subscription-area button {
+  .footer_subscription_area button {
     width: 100%;
     height: 35px;
     cursor: pointer;
@@ -627,17 +628,17 @@ footer {
     background-color: #d3d2d2;
     box-shadow: 0px 2px 5px 0px rgba(79, 78, 78, 0.75);
   }
-  .footer-subscription-area button:hover {
+  .footer_subscription_area button:hover {
     background-color: var(--light-grey);
     transition: background-color 0.5s;
   }
 
-  .footer-info {
+  .footer_info {
     background-color: white;
     padding: 15px;
   }
 
-  .footer-info-all-links {
+  .footer_info_all_links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-content: center;
@@ -649,19 +650,19 @@ footer {
     margin-top: 15px;
     font-weight: 300;
   }
-  .footer-info-all-links li {
+  .footer_info_all_links li {
     padding: 5px 0px;
   }
-  .footer-info-all-links li a {
+  .footer_info_all_links li a {
     text-decoration: none;
     color: grey;
   }
 
-  .footer-all-stores {
+  .footer_all_stores {
     background-color: white;
     padding: 15px;
   }
-  .footer-all-stores-links {
+  .footer_all_stores_links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-content: center;
@@ -674,31 +675,31 @@ footer {
     font-weight: 300;
   }
 
-  .footer-all-stores-links li {
+  .footer_all_stores_links li {
     padding: 5px 0px;
   }
 
-  .footer-all-stores-links li a {
+  .footer_all_stores_links li a {
     text-decoration: none;
     color: grey;
   }
 
-  .footer-social-media {
+  .footer_social_media {
     display: grid;
     place-content: center;
     background-color: white;
     padding: 0px;
     text-align: center;
   }
-  .footer-social-media h4 {
+  .footer_social_media h4 {
     font-weight: 400;
   }
-  .footer-social-media-icons {
+  .footer_social_media_icons {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .footer-social-media-icons img {
+  .footer_social_media_icons img {
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -712,30 +713,30 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  .footer-container {
+  .footer_container {
     grid-template-columns: 2.2fr repeat(2, 2fr) 0.5fr;
     gap: 10px;
     background-color: var(--light-grey);
     height: 320px;
   }
 
-  .footer-info {
+  .footer_info {
     background-color: var(--light-grey);
   }
 
-  .footer-info-all-links {
+  .footer_info_all_links {
     background-color: var(--light-grey);
   }
 
-  .footer-all-stores {
+  .footer_all_stores {
     background-color: var(--light-grey);
   }
 
-  .footer-all-stores-links {
+  .footer_all_stores_links {
     background-color: var(--light-grey);
   }
 
-  .footer-social-media {
+  .footer_social_media {
     display: block;
     padding-top: 20px;
     background-color: var(--light-grey);

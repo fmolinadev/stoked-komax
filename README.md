@@ -1,7 +1,7 @@
 # 🏄‍♂️ Stoked - Komax Frontend Developer
 ## 💡 Descripción
 
-Challenge para el puesto de Frontend Developer en Komax.cl. El objetivo era crear una landing home basada en el [mockup figma compartido] (https://www.figma.com/file/cMcFibqhJpBB4KZTfGXoQx/Stoked-Practice-Home?node-id=0%3A1&t=zBgiTDbIb34IcSXn-1). 
+Challenge para el puesto de Frontend Developer en Komax.cl. El objetivo era crear una landing home basada en el [mockup figma compartido](https://www.figma.com/file/cMcFibqhJpBB4KZTfGXoQx/Stoked-Practice-Home?node-id=0%3A1&t=zBgiTDbIb34IcSXn-1). 
 
 ## 💅 Diseño:  
 El diseño recibido comprende lo siguiente:

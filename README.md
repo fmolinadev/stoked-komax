@@ -34,6 +34,7 @@ Se pueden ver más desde la carpeta "screenshots" de este proyecto.
 
 ## 🧷  Puntos de mejora:
 - Incorporar el menu desplegable de la vista mobile.
+- Fijar la barra de navegacion para que este siempre a la vista.
 - Contener con un ancho maximo a las vistas para considerar la experiencia del usuario en pantallas muy anchas.
 - Renderizar los componentes de las secciones desde archivos js (simulando un React.js) para hacer más legible el código del index.html.
 - Revisar la nomenclatura del CSS.

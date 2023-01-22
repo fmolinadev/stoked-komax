@@ -60,14 +60,19 @@
             <img src="/assets/profile-icon.svg" alt="profile icon" />
           </a>
           <a href="">
-            <img src="/assets/transport-icon.svg" alt="transport icon" />
+            <img
+              src="/assets/transport-icon.svg"
+              alt="transport icon"
+              id="transport"
+            />
           </a>
           <a href="">
             <img src="/assets/cart-icon.svg" alt="kart icon" />
           </a>
           <a href="">
-            <img src="/assets/store-icon.svg" alt="store icon" />
+            <img src="/assets/store-icon.svg" alt="store icon" id="store" />
           </a>
+          <img src="/assets/menu-icon.svg" alt="menu" id="menuBtn" />
         </div>
       </div>
     </header>
@@ -87,12 +92,48 @@
           <li><a href="">Equipamiento</a></li>
           <li><a href="">Sale</a></li>
         </ul>
-        <form action="search" class="searchbar_container">
+        <form action="" class="searchbar_container" onclick="show()">
           <button type="submit" id="search_action">
             <img src="/assets/search_icon.svg" alt="search icon" />
           </button>
           <input type="search" placeholder="buscar" id="getinput" />
         </form>
+      </div>
+      <div id="result">
+        <div class="result_container">
+          <div class="result_left">
+            <h4>Búsquedas Populares</h4>
+            <div class="result_links">
+              <ul>
+                <li><a href="#">Poleras</a></li>
+                <li><a href="#">Poleras Hombre</a></li>
+                <li><a href="#">Poleras de Agua</a></li>
+                <li><a href="#">Poleras manga larga</a></li>
+              </ul>
+            </div>
+            <hr class="hr-divisor" />
+            <h4>Búsquedas recientes</h4>
+            <div class="result_links">
+              <ul>
+                <li><a href="#">Poleras</a></li>
+                <li><a href="#">Ponchos toallas</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="hr-divisor-vertical" />
+          <div class="result_right">
+            <div>
+              <h4>Búsquedas Populares</h4>
+              <div class="result_grid">
+                <article class="result_card">1</article>
+                <article class="result_card">2</article>
+                <article class="result_card">3</article>
+                <article class="result_card">4</article>
+              </div>
+            </div>
+          </div>
+          <button onclick="show()" class="btn-result">x</button>
+        </div>
       </div>
     </nav>
     <main>
@@ -237,36 +278,36 @@
       <section class="categories_container">
         <h3 class="categories_text_head">Categorias:</h3>
         <section class="categories_grid">
-          <article class="grid-item">
+          <article class="grid_item">
             <img src="/images/categories/arte_.jpg" alt="category image" />
             <span>Arte</span>
           </article>
-          <article class="grid-item">
+          <article class="grid_item">
             <img src="/images/categories/local_.jpg" alt="category image" />
             <span>Local</span>
           </article>
-          <article class="grid-item">
+          <article class="grid_item">
             <img
               src="/images/categories/sustentabilidad_.jpg"
               alt="category image"
             />
             <span>Sustentabilidad</span>
           </article>
-          <article class="grid-item">
+          <article class="grid_item">
             <img
               src="/images/categories/stoked_hombre.jpg"
               alt="category image"
             />
             <span>Hombre</span>
           </article>
-          <article class="grid-item">
+          <article class="grid_item">
             <img
               src="/images/categories/stoked_mujer.jpg"
               alt="category image"
             />
             <span>Mujer</span>
           </article>
-          <article class="grid-item">
+          <article class="grid_item">
             <img
               src="/images/categories/stocked_niños.jpg"
               alt="category image"
@@ -277,29 +318,35 @@
       </section>
     </main>
     <footer>
-      <div class="footer-container">
-        <div class="footer-subscription-area">
+      <div class="footer_container">
+        <div class="footer_subscription_area">
           <h3>Subcríbete</h3>
           <p>
             ¡Infórmate de las noticias, eventos, promociones, descuentos,
             sorteos y concursos que tenemos para ti!
           </p>
-          <form action="/subscribe">
-            <input type="text" placeholder="Ingresa tu correo electrónico" />
-          </form>
-          <div class="footer-terms">
-            <input type="checkbox" name="terms" id="terms" />
-            <p>
-              Acepto recibir promociones y novedades de Stoked y marcas
-              representadas por Komax.
-            </p>
-          </div>
-          <button type="submit">Registrarme</button>
-        </div>
+          <form action="#">
+            <input
+              type="email"
+              name="email"
+              title="Se necesita un email"
+              placeholder="Ingresá tu correo electrónico"
+              required
+            />
 
-        <div class="footer-info">
+            <div class="footer_terms">
+              <input type="checkbox" name="terms" id="terms" required />
+              <p>
+                Acepto recibir promociones y novedades de Stoked y marcas
+                representadas por Komax.
+              </p>
+            </div>
+            <button type="submit">Registrarme</button>
+          </form>
+        </div>
+        <div class="footer_info">
           <h4>Te informamos</h4>
-          <div class="footer-info-all-links">
+          <div class="footer_info_all_links">
             <ul>
               <li><a href="#">Formulario de contacto</a></li>
               <li><a href="#">Chatea con nosotros</a></li>
@@ -317,9 +364,9 @@
           </div>
         </div>
 
-        <div class="footer-all-stores">
+        <div class="footer_all_stores">
           <h4>Nuestras Tiendas</h4>
-          <div class="footer-all-stores-links">
+          <div class="footer_all_stores_links">
             <ul>
               <li><a href="#">OMZ</a></li>
               <li><a href="#">AV. Costanera S/N</a></li>
@@ -335,9 +382,9 @@
           </div>
         </div>
 
-        <div class="footer-social-media">
+        <div class="footer_social_media">
           <h4>Nuestras Redes</h4>
-          <div class="footer-social-media-icons">
+          <div class="footer_social_media_icons">
             <a
               href="https://www.instagram.com/stokedchile/?igshid=YmMyMTA2M2Y%3D"
               target="_blank"
@@ -367,5 +414,6 @@
     <script src=" js/controllerFullwithBanners.js"></script>
     <script src="js/carouselBanners.js"></script>
     <script src="js/carrouselProducts.js"></script>
+    <script src="js/searchController.js"></script>
   </body>
 </html>

@@ -189,6 +189,26 @@ footer {
     font-family: var(--font);
     font-size: 16px;
   }
+
+  .searchbar_container input:focus {
+    color: black;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 11px;
+  }
+
+  .btn-result {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 3px;
+  }
+
+  .btn-result:hover {
+    color: red;
+    border: 1px solid red;
+  }
 }
 
 @media (min-width: 700px) {
@@ -217,25 +237,47 @@ footer {
     margin-top: 1 0px;
     display: none;
     z-index: 4;
-    height: 233px;
+    position: absolute;
+    height: 263px;
     justify-content: flex-end;
-    padding-right: 6%;
   }
 
   .result_container {
     background-color: white;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: row;
   }
 
   .result_left {
     background-color: white;
+    width: 200px;
+  }
+
+  .result_left a {
+    color: black;
+  }
+
+  .result_left a:hover {
+    color: var(--primary);
+  }
+
+  .hr-divisor {
+    margin: 12px 0px;
+    width: 80%;
+  }
+
+  .hr-divisor-vertical {
+    width: 0px 12px;
+    height: 90%;
   }
 
   .result_right {
     padding-left: 20px;
-    width: 80%;
+    width: 500px;
+  }
+  .result_right h4 {
+    padding-bottom: 12px;
   }
 
   .result_grid {

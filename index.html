@@ -92,16 +92,11 @@
           <li><a href="">Equipamiento</a></li>
           <li><a href="">Sale</a></li>
         </ul>
-        <form action="" class="searchbar_container">
+        <form action="" class="searchbar_container" onclick="show()">
           <button type="submit" id="search_action">
             <img src="/assets/search_icon.svg" alt="search icon" />
           </button>
-          <input
-            type="search"
-            placeholder="buscar"
-            id="getinput"
-            onclick="show()"
-          />
+          <input type="search" placeholder="buscar" id="getinput" />
         </form>
       </div>
       <div id="result">
@@ -116,7 +111,7 @@
                 <li><a href="#">Poleras manga larga</a></li>
               </ul>
             </div>
-            <br />
+            <hr class="hr-divisor" />
             <h4>Búsquedas recientes</h4>
             <div class="result_links">
               <ul>
@@ -125,7 +120,7 @@
               </ul>
             </div>
           </div>
-
+          <hr class="hr-divisor-vertical" />
           <div class="result_right">
             <div>
               <h4>Búsquedas Populares</h4>
@@ -137,6 +132,7 @@
               </div>
             </div>
           </div>
+          <button onclick="show()" class="btn-result">x</button>
         </div>
       </div>
     </nav>

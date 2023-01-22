@@ -92,12 +92,52 @@
           <li><a href="">Equipamiento</a></li>
           <li><a href="">Sale</a></li>
         </ul>
-        <form action="search" class="searchbar_container">
+        <form action="" class="searchbar_container">
           <button type="submit" id="search_action">
             <img src="/assets/search_icon.svg" alt="search icon" />
           </button>
-          <input type="search" placeholder="buscar" id="getinput" />
+          <input
+            type="search"
+            placeholder="buscar"
+            id="getinput"
+            onclick="show()"
+          />
         </form>
+      </div>
+      <div id="result">
+        <div class="result_container">
+          <div class="result_left">
+            <h4>Búsquedas Populares</h4>
+            <div class="result_links">
+              <ul>
+                <li><a href="#">Poleras</a></li>
+                <li><a href="#">Poleras Hombre</a></li>
+                <li><a href="#">Poleras de Agua</a></li>
+                <li><a href="#">Poleras manga larga</a></li>
+              </ul>
+            </div>
+            <br />
+            <h4>Búsquedas recientes</h4>
+            <div class="result_links">
+              <ul>
+                <li><a href="#">Poleras</a></li>
+                <li><a href="#">Ponchos toallas</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="result_right">
+            <div>
+              <h4>Búsquedas Populares</h4>
+              <div class="result_grid">
+                <article class="result_card">1</article>
+                <article class="result_card">2</article>
+                <article class="result_card">3</article>
+                <article class="result_card">4</article>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
     <main>
@@ -289,8 +329,8 @@
             ¡Infórmate de las noticias, eventos, promociones, descuentos,
             sorteos y concursos que tenemos para ti!
           </p>
-          <form action="/subscribe">
-            <input type="text" placeholder="Ingresa tu correo electrónico" />
+          <form action="#">
+            <input type="text" placeholder="Ingresá tu correo electrónico" />
           </form>
           <div class="footer_terms">
             <input type="checkbox" name="terms" id="terms" />
@@ -371,5 +411,6 @@
     <script src=" js/controllerFullwithBanners.js"></script>
     <script src="js/carouselBanners.js"></script>
     <script src="js/carrouselProducts.js"></script>
+    <script src="js/searchController.js"></script>
   </body>
 </html>
